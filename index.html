@@ -1426,12 +1426,17 @@
         updatePrayerStatus();
         setInterval(updatePrayerStatus, 60000);
 
-        function updateIslamicDate() {
-            const today = new Date();
-            const formatted = new Intl.DateTimeFormat('en-u-ca-islamic-civil', { day: 'numeric', month: 'long', year: 'numeric' }).format(today);
-            const dateElem = document.getElementById('islamicDate');
-            if (dateElem) dateElem.innerHTML = `<i class="far fa-calendar-alt"></i> <span>${formatted} Hijri</span>`;
-        }
+       function updateIslamicDate() {
+    const today = new Date();
+    // Use 'islamic' instead of 'islamic-civil' for proper month names (Shawwal, Ramadan, etc.)
+    const formatted = new Intl.DateTimeFormat('en-u-ca-islamic', { 
+        day: 'numeric', 
+        month: 'long', 
+        year: 'numeric' 
+    }).format(today);
+    const dateElem = document.getElementById('islamicDate');
+    if (dateElem) dateElem.innerHTML = `<i class="far fa-calendar-alt"></i> <span>${formatted} Hijri</span>`;
+}
         updateIslamicDate();
 
         // Mobile Menu
