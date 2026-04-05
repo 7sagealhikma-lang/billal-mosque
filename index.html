@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="am">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>ቢላል መስጂድ - Bilal Mosque | Spiritual Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Noto Sans Ethiopic and Noto Sans -->
+     <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="background-image"></div>
+
+    <header>
+        <div class="header-container">
+            <video autoplay muted loop playsinline class="header-video">
+                <source src="bhead9.mp4" type="video/mp4">
+            </video>
+            <div class="logo">
+                <div class="logo-circle">
+                    <img src="assets/images/looogo.png" alt="Logo"onerror="this.src='https://via.placeholder.com/48?text=B'">
+                </div>
+                <!-- Wrap text in a div to keep them together -->
+                <div class="logo-text">
+                    <h1>ቢላል ሙስሊም ኮሚኒቲ ማህበር</h1>
+                    <h2>Billal Islamic Community Association</h2>
+                </div>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <div class="overlay" id="overlay"></div>
+    <nav id="mainNav">
+        <ul class="nav-links">
+            <li><a href="#home"><i class="fas fa-home"></i> ቢላል</a></li>
+            <li><a href="#madrasa"><i class="fas fa-book"></i> አባልነት መመዝገቢያ</a></li>
+            <li><a href="#leadership"><i class="fas fa-user-tie"></i> መረጃ እና አድራሻ </a></li>
+            <li><a href="#donate"><i class="fas fa-hand-holding-heart"></i>ማስታወቂያ</a></li>
+            <li><a href="#announcements"><i class="fas fa-bullhorn"></i> መድረሳ </a></li>
+        </ul>
+    </nav>
+    </div>
+    <main>
+        <!-- Hero with Ayah Transition -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="ayah-container" id="ayahText">يَٰبَنِيٓ ءَادَمَ خُذُواْ زِينَتَكُمۡ عِندَ كُلِّ مَسۡجِدٖ
+                </div>
+                <div class="surah-ref" id="surahRef">Surah Al-A'raf (7:31)</div>
+            </div>
+        </section>
+        
+        <section class="current-date">
+            <div class="date-display" id="islamicDate"><i class="far fa-calendar-alt"></i> <span>29 ረመዳን 1446</span></div>
+        </section>
+
+        <!-- Prayer Times -->
+        <section class="prayer-times">
+            <div class="section-title">
+                <h3 style="color:white; font-size:3rem;"> يٰٓاَيُّهَا الَّذِيۡنَ اٰمَنُوا اسۡتَعِيۡنُوۡا بِالصَّبۡرِ وَالصَّلٰوةِ ؕ اِنَّ اللّٰهَ مَعَ الصّٰبِرِيۡنَ</h3>
+                <h4 style="color:white; font-size:2rem;"> Al-Baqarah(2:153)</h4>
+            </div>
+            <div class="prayer-grid" id="prayerGrid"></div>
+            <div class="next-prayer-indicator" id="nextPrayer"><span>ቀጣይ ሶላት በቅርቡ</span></div>
+        </section>
+
+
+        <!-- Announcements -->
+       
+        <section class="content-section" id="announcements">
+            <div class="ads">
+        <h2 style="font-size:3rem; padding: 1.5rem 1.5rem 1.5rem 1.5rem; color:white;text-align:center;background-color: #1a09429d; ">ንግድዎን ያስፋፉ፣ መስጊድዎን ይርዱ</h2>
+            </div>
+        <div class = "cards"> 
+            <div class="ad-card">
+                <div class="ad-badge">ማስታወቂያ (Advertisment)</div>
+                <div class="ad-icon"><i class="fas fa-book-open"></i></div>
+                <h3>የቁርዓን ትምህርት</h3>
+                <p>ለህፃናት እና ለታላላቅ የተዘጋጀ የቁርዓን እና የተጅዊድ ትምህርት።</p>
+                <div class="ad-contact">
+                    <span><i class="fas fa-phone"></i> 061 774 4192</span>
+                </div>
+                <a href="tel:0617744192" class="ad-btn">አሁኑኑ ይደውሉ</a>
+            </div>
+            
+
+
+            <div class="ad-card">
+                <div class="ad-badge">ማስታወቂያ (Advertisment)</div>
+                <div class="ad-icon"><i class="fas fa-book-open"></i></div>
+                <h3>የሚከራይ</h3>
+                <p>ለበለጠ መረጃ</p>
+                <div class="ad-contact">
+                    <span><i class="fas fa-phone"></i> 062 827 0432</span>
+                </div>
+                <a href="tel:0628270432" class="ad-btn">የሚከራይ</a>
+            </div>
+            <div class="ad-card">
+                <div class="ad-badge">ማስታወቂያ (Advertisment)</div>
+                <div class="ad-icon"></div>
+                <h3>7 ሴጅ አል ሂክማ የእንጨት ስራ አገልግሎት </h3>
+                <p>ለማንኛውም የእንጨት ስራዎች።</p>
+                <div class="ad-contact">
+                    <span><i class="fas fa-phone"></i> 062 827 0432</span>
+                </div>
+                <a href="https://7sagealhikma-lang.github.io/Carpentry7sage/" class="ad-btn">7 ሴጅ አል ሂክማ</a>
+            </div>
+            <div class="ad-card">
+                <div class="ad-badge">ማስታወቂያ (Advertisment)</div>
+                <div class="ad-icon"></div>
+                <h3>ቴክ19 </h3>
+                <p>የቴክኖሎጂ መፍትሄዎች ለዘመናዊ ስራ \n የንግድዎን እድገት በዌብ አፕሊኬሽን ያፋጥኑ!</p>
+                <div class="ad-contact">
+                    <span><i class="fas fa-phone"></i> 062 827 0432</span>
+                </div>
+                <a href=" https://7sagealhikma-lang.github.io/tech19/" class="ad-btn">ቴክ19</a>
+            </div>
+        </div>
+        </section>
+
+       
+
+        <!-- Madrasa -->
+        <section class="content-section2" id="madrasa">
+            <div class="ads">
+        <h2 style="font-size:3rem;padding: 1.5rem 1.5rem 1.5rem 1.5rem; color:white; text-align:center;background-color: #1a09429d; ">መድረሳ ፕሮግራም</h2>
+        </div>
+            <div class="card">
+                <div
+                    style="display:flex; gap:0.8rem; align-items:center; border-bottom:2px solid var(--gold); padding-bottom:0.8rem; flex-wrap:wrap;">
+                    <div
+                        style="background:var(--primary-green); width:45px; height:45px; border-radius:18px; display:flex; align-items:center; justify-content:center;">
+                        <i class="fas fa-book-open fa-2x" style="color:var(--gold); font-size:1.4rem;"></i>
+                    </div>
+                    <div>
+                        <h3 style="color:white; font-size:1.3rem;">በቢላል መስጂድ የቁርአን እና እስላማዊ ትምህርት ለሁሉም ዕድሜ ይሰጣል።</h3>
+                        <p style="font-size:0.8rem;">Madrasa Excellence</p>
+                    </div>
+                </div>
+                
+                <div style="background:var(--cream); border-radius:24px; padding:0.8rem;">
+                    <div style="display:flex; justify-content:space-between; padding:0.5rem 0; font-size:1.6rem;">
+                        <span><i class="fas fa-child"></i> የልጆች ትምህርት</span><span>ሰኞ - ሐሙስ: 4:00-6:00 PM</span>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; padding:0.5rem 0; font-size:1.6rem;">
+                        <span><i class="fas fa-user-graduate"></i> አዋቂዎች</span><span>ሰኞ & ሐሙስ: 7:00-8:30 PM</span>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; padding:0.5rem 0; font-size:1.6rem;">
+                        <span><i class="fas fa-star"></i> ቅዳሜ ህፃናት</span><span>9:00 AM - 12:00 PM</span>
+                    </div>
+                </div>
+                <a href="https://wa.me/27677929291?text=ሰላም፣%20ስለ%20መድረሳ%20ትምህርት%20እፈልጋለሁ" class="btn btn-whatsapp"
+                    style="margin-top:1rem;"><i class="fab fa-whatsapp"></i> በዋትስአፕ ይቀላቀሉ</a>
+            </div>
+        </section>
+        
+        <section class="community-info">
+            <div class="ads">
+        <h2 style="font-size:3rem; padding: 1.5rem 1.5rem 1.5rem 1.5rem; color:white;text-align:center;background-color: #1a09429d; ">የቢላል ሙስሊም ማህበር አባልነት መመዝገቢያ</h2>
+        </div>
+            <div class="info-grid">
+
+                <div class="registration-column">
+
+                   
+                    <form id="membershipForm">
+                        <input type="text" id="name" placeholder="ሙሉ ስም (Full Name)" required>
+                        <input type="tel" id="phone" placeholder="ስልክ ቁጥር (Phone Number)" required>
+                        <textarea id="address" placeholder="አድራሻ (Address)" rows="3"></textarea>
+                        <button type="button" onclick="sendToWhatsApp()" class="btn-submit">ተመዝገብ (Submit to
+                            WhatsApp)</button>
+                    </form>
+                </div>
+                <div class="updates-column">
+                    <div class="donation-row">
+
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+        
+        <section class="content-section2">
+            <div class="donatenow">
+                 <button onclick="openBankWindow()">  የቢላል ሙስሊም ማህበረሰብ ማህበርን ለመደገፍ ለሚፈልጉ ሁሉ</button>
+                 
+            </div>
+
+        </section>
+        
+
+        <section class="content-section2">
+            <div class="ads">
+        <h2 style="font-size:3rem; padding: 1.5rem 1.5rem 1.5rem 1.5rem; color:white;text-align:center;background-color: #1a09429d; ">አገልግሎቶቻችን (Our Services)</h2>
+        </div>
+            <div class="services-grid">
+                <div class="service-card"><i class="fas fa-pray"></i>
+                    <h3>የዕለት ተዕለት ሶላት እና የጁምዓ ኹጥባ</h3>
+                    <p>Five daily prayers & Jumu'ah</p>
+                </div>
+                <div class="service-card"><i class="fas fa-book"></i>
+                    <h3>የቁርዓን እና ኢስላማዊ ትምህርቶች</h3>
+                    <p>Quran, Tajweed, Hadith</p>
+                </div>
+                <div class="service-card"><i class="fas fa-heart"></i>
+                    <h3>የኒካህ (የጋብቻ) አገልግሎት</h3>
+                    <p>Islamic marriage ceremonies</p>
+                </div>
+                <div class="service-card"><i class="fas fa-hand-holding-heart"></i>
+                    <h3>የቀብር ስነስርዓት (Janazah)</h3>
+                    <p>Funeral prayers & burial</p>
+                </div>
+            </div>
+            
+        </section>
+        
+         
+        <!-- Leadership + GPS location -->
+        <section class="content-section2" id="leadership">
+            <div class="ads">
+                 <h2 style="font-size:3rem; padding: 1.5rem 1.5rem 1.5rem 1.5rem; color:white;text-align:center;background-color: #1a09429d; ">ለበለጠ መረጃ እና አድራሻ</h2>
+                 </div>
+            <div class ="contact">
+                <div class="card">
+                    <div class="profile-section" style="text-align:center;"><h4 style="color:white; margin-top:0.8rem;">የቢላል መስጂድ</h4>
+                    <p>Director -Alias </p>
+                    <a href="https://wa.me/27677929291" class="btn btn-whatsapp" style="width:auto; display:inline-flex; margin:0.8rem 0;"><i class="fab fa-whatsapp"></i> በዋትስአፕያናግሩ</a>
+                    <p><i class="fas fa-phone"></i> 067 792 9291</p>
+                        </div>
+                </div>
+                <div class="gps-card"
+                    <div style="font-size:2rem; margin-top:0.8rem; background: #5e4599f0; padding: 1.5rem 1.5rem 1.5rem 1.5rem; border-radius: 15px;"><i class="fas fa-map-marker-alt" style="color:var(--gold);"></i>
+                        <strong>አድራሻ / Address:</strong>
+                        <a href="https://maps.google.com/?q=32+Teddington+Street,+Bellville+Cape+Town+7530"target="_blank" class="gps-link"style="color:black; background: var(--card-bg); text-decoration:underline; font-size:2rem;">32 Teddington St, Bellville, Cape Town, 7530<i class="fas fa-external-link-alt"></i></a>
+                
+                    </div>
+                
+
+                <div class="jannazah-card">
+                    <div class="jannazah-header">
+                        <div class="logo-circle3"><img src="looogo.png" alt="Logo"></div>
+                        <h3 style="font-size:2rem;">የቀብር ስነስርዓት ማስታወቂያ (Janazah)</h3>
+                    </div>
+                    <p class="status-empty">በአሁኑ ሰዓት ምንም አይነት ማስታወቂያ የለም።</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Features + Services -->
+                  
+
+        <section class="content-section" >
+            <div class="ads">
+        <h2 style="font-size:3rem; color:white;text-align:center;background-color: #1a09429d; ">መንፈሳዊ መዝናኛ(Spiritual Resources)</h2>
+        </div> 
+            <div class="link-grid">
+                <a href="https://qurancentral.com" target="_blank" class="grid-item history-bg"
+                    style="background-image: url('link.jpg'); background-size:cover; ">
+                    <div class="overlay">
+                        <h3>ሙስሊም ሴንትራል</h3>
+                        <p>ትልቁ የእስላማዊ የድምፅ ትምህርቶች መድረክ</p>
+                    </div>
+                </a>
+                <a href="https://ethiopianmajlis.org.et/" target="_blank" class="grid-item history-bg"
+                    style="background-image: url('eth.png'); background-size:cover; ">
+                    <div class="overlay">
+                        <h3>Ethiopian Islamic Affairs Supreme Council</h3>
+                       
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+   
+<footer>
+    <div class="footer-content">
+
+    <div class="profile-section" style="text-align:center; display: flex; flex-direction: column; align-items: center;"></div>
+            <div class="logo-circle3">
+                <img src="looogo.png" alt="Logo">
+            </div>
+        
+    <div class="icons">
+        <a href="#">
+            <div class="layer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fab fa-facebook-f"></span>
+            </div>
+            <div class="text">Facebook</div>
+        </a>
+
+        <a href="#">
+            <div class="layer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fab fa-twitter"></span>
+            </div>
+            <div class="text">Twitter</div>
+        </a>
+
+        <a href="#">
+            <div class="layer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fab fa-instagram"></span>
+            </div>
+            <div class="text">Instagram</div>
+        </a>
+
+        <a href="#">
+            <div class="layer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fab fa-youtube"></span>
+            </div>
+            <div class="text">youtube</div>
+        </a>
+
+    </div>
+
+        <div class="footer-note" style="color: white; font-size: 2rem;">
+            <p>&copy; 2026 ቢላል መስጂድ | ሁሉም መብቶች የተጠበቁ ናቸው።</p>
+        
+            <p>Made by 
+            <a href=" https://7sagealhikma-lang.github.io/tech19/" class="yusuf-btn" style="color:black; font-size: 3rem; background-color: lightblue;  ">YUSUF</a> 
+            for the love of Ethiopian Muslim Community
+            </p>
+        </div>
+        </div>
+</footer>
+
+    <script>
+        // Background Slider
+        const slides = document.querySelectorAll('.bg-slider .slide');
+        let currentSlide = 0;
+        function nextBackground() {
+            if (slides.length) {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+            }
+        }
+        if (slides.length > 1) setInterval(nextBackground, 7000);
+
+        // Ayah Rotation
+        const ayahList = [
+            { text: "يَٰبَنِيٓ ءَادَمَ خُذُواْ زِينَتَكُمۡ عِندَ كُلِّ مَسۡجِدٖ", surah: "Surah Al-A'raf (7:31)" },
+            { text: "إِنَّمَا يَعْمُرُ مَسَاجِدَ اللَّهِ مَنْ آمَنَ بِاللَّهِ وَالْيَوْمِ الْآخِرِ", surah: "Surah At-Tawbah (9:18)" },
+            { text: "وَمَا أُمِرُوا إِلَّا لِيَعْبُدُوا اللَّهَ مُخْلِصِينَ لَهُ الدِّينَ", surah: "Surah Al-Bayyinah (98:5)" },
+            { text: "فَاعْبُدِ اللَّهَ مُخْلِصًا لَهُ الدِّينَ", surah: "Surah Az-Zumar (39:2)" },
+            { text: "قُلِ اللَّهَ أَعْبُدُ مُخْلِصًا لَهُ دِينِي", surah: "Surah Az-Zumar (39:14)" },
+            { text: "فَادْعُوا اللَّهَ مُخْلِصِينَ لَهُ الدِّينَ", surah: "Surah Ghafir (40:14)" },
+            { text: "هُوَ الْحَيُّ لَا إِلَهَ إِلَّا هُوَ فَادْعُوهُ مُخْلِصِينَ لَهُ الدِّينَ", surah: "Surah Ghafir (40:65)" },
+            { text: "وَمَا خَلَقْتُ الْجِنَّ وَالْإِنْسَ إِلَّا لِيَعْبُدُونِ", surah: "Surah Adh-Dhariyat (51:56)" },
+            { text: "قُلْ إِنِّي أُمِرْتُ أَنْ أَعْبُدَ اللَّهَ مُخْلِصًا لَهُ الدِّينَ", surah: "Surah Az-Zumar (39:11)" },
+            { text: "وَمَا أُمِرُوا إِلَّا لِيَعْبُدُوا إِلَهًا وَاحِدًا", surah: "Surah At-Tawbah (9:31)" },
+            { text: "لَا إِلَهَ إِلَّا أَنَا فَاعْبُدُونِ", surah: "Surah Al-Anbiya (21:25)" },
+            { text: "إِنَّمَا أُمِرْتُ أَنْ أَعْبُدَ رَبَّ هَذِهِ الْبَلْدَةِ", surah: "Surah An-Naml (27:91)" },
+            { text: "قُلْ إِنَّ صَلَاتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ", surah: "Surah Al-An'am (6:162)" }
+        ];
+        let ayahIndex = 0;
+        const ayahElem = document.getElementById('ayahText');
+        const surahElem = document.getElementById('surahRef');
+        function rotateAyah() {
+            if (ayahElem) {
+                ayahElem.style.opacity = '0';
+                setTimeout(() => {
+                    ayahIndex = (ayahIndex + 1) % ayahList.length;
+                    ayahElem.innerText = ayahList[ayahIndex].text;
+                    surahElem.innerText = ayahList[ayahIndex].surah;
+                    ayahElem.style.opacity = '1';
+                }, 400);
+            }
+        }
+        if (ayahElem) setInterval(rotateAyah, 8000);
+
+        // Prayer Times Data
+        const prayerTimesData = {
+            fajr: { hour: 5, minute: 15, name: 'ፈጅር (Fajr)' },
+            sunrise: { hour: 6, minute: 30, name: 'ሱብህ (Sunrise)' },
+            dhuhr: { hour: 12, minute: 30, name: 'ዙህር (Dhuhr)' },
+            asr: { hour: 15, minute: 45, name: 'ዓስር (Asr)' },
+            maghrib: { hour: 18, minute: 25, name: 'መግሪብ (Maghrib)' },
+            isha: { hour: 19, minute: 45, name: 'ኢሻ (Isha)' }
+        };
+        const prayerKeys = ['fajr', 'sunrise', 'dhuhr', 'asr', 'maghrib', 'isha'];
+        const grid = document.getElementById('prayerGrid');
+        if (grid) {
+            prayerKeys.forEach(key => {
+                const p = prayerTimesData[key];
+                const card = document.createElement('div');
+                card.className = 'prayer-card';
+                card.setAttribute('data-prayer', key);
+                card.innerHTML = `<div class="prayer-name">${p.name}</div><div class="prayer-time">${p.hour.toString().padStart(2, '0')}:${p.minute.toString().padStart(2, '0')}</div>`;
+                grid.appendChild(card);
+            });
+        }
+
+        function updatePrayerStatus() {
+            const now = new Date();
+            const currentMin = now.getHours() * 60 + now.getMinutes();
+            let nextPrayer = null;
+            let smallestDiff = Infinity;
+            for (let key of prayerKeys) {
+                const p = prayerTimesData[key];
+                const prayerMin = p.hour * 60 + p.minute;
+                const diff = prayerMin - currentMin;
+                if (diff > 0 && diff < smallestDiff) {
+                    smallestDiff = diff;
+                    nextPrayer = { ...p, key };
+                }
+            }
+            if (!nextPrayer) {
+                const fajr = prayerTimesData.fajr;
+                const tomorrowFajr = (24 * 60) - currentMin + (fajr.hour * 60 + fajr.minute);
+                nextPrayer = { ...fajr, key: 'fajr', diff: tomorrowFajr };
+                smallestDiff = tomorrowFajr;
+            } else {
+                nextPrayer.diff = smallestDiff;
+            }
+            document.querySelectorAll('.prayer-card').forEach(card => card.classList.remove('active'));
+            if (nextPrayer) {
+                const activeCard = document.querySelector(`[data-prayer="${nextPrayer.key}"]`);
+                if (activeCard) activeCard.classList.add('active');
+                const hoursLeft = Math.floor(nextPrayer.diff / 60);
+                const minsLeft = nextPrayer.diff % 60;
+                const timeStr = hoursLeft > 0 ? `${hoursLeft} ሰዓት ${minsLeft} ደቂቃ` : `${minsLeft} ደቂቃ`;
+                const nextEl = document.getElementById('nextPrayer');
+                if (nextEl) nextEl.innerHTML = `<span>ቀጣዩ ሶላት: ${nextPrayer.name} - በ ${timeStr} ውስጥ</span>`;
+            }
+        }
+        updatePrayerStatus();
+        setInterval(updatePrayerStatus, 60000);
+
+        function updateIslamicDate() {
+            const today = new Date();
+            const formatted = new Intl.DateTimeFormat('en-u-ca-islamic-civil', { day: 'numeric', month: 'long', year: 'numeric' }).format(today);
+            const dateElem = document.getElementById('islamicDate');
+            if (dateElem) dateElem.innerHTML = `<i class="far fa-calendar-alt"></i> <span>${formatted} Hijri</span>`;
+        }
+        updateIslamicDate();
+
+        // Mobile Menu
+        const menuToggle = document.getElementById('menuToggle');
+        const nav = document.getElementById('mainNav');
+        const overlayDiv = document.getElementById('overlay');
+        function toggleMenu() {
+            nav.classList.toggle('active');
+            overlayDiv.classList.toggle('active');
+            document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
+        }
+        if (menuToggle) menuToggle.addEventListener('click', toggleMenu);
+        if (overlayDiv) overlayDiv.addEventListener('click', toggleMenu);
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (nav.classList.contains('active')) toggleMenu();
+                const targetId = link.getAttribute('href').substring(1);
+                const targetEl = document.getElementById(targetId);
+                if (targetEl) targetEl.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (header) {
+                if (window.scrollY > 50) header.style.background = 'rgba(10, 62, 40, 0.96)';
+                else header.style.background = 'rgba(10, 62, 40, 0.88)';
+            }
+        });
+
+        const hour = new Date().getHours();
+        let greet = hour < 12 ? 'ሰላም ለዚህ ቅዱስ ጠዋት' : (hour < 18 ? 'እንደምን አለህ በረከት የሞላበት ቀን ይሁን' : 'ምሽቱ የተባረከ ይሁን');
+        const heroContent = document.querySelector('.hero-content');
+        if (heroContent && !document.querySelector('.greeting-msg')) {
+            const greetingMsg = document.createElement('div');
+            greetingMsg.className = 'greeting-msg';
+            greetingMsg.style.marginTop = '10px';
+            greetingMsg.style.fontSize = '2rem';
+            greetingMsg.style.color = '#f4e2a7';
+            greetingMsg.innerHTML = `<i class="fas fa-hand-peace"></i> ${greet}`;
+            heroContent.appendChild(greetingMsg);
+        }
+
+        window.sendToWhatsApp = function () {
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const address = document.getElementById('address').value;
+            if (!name || !phone) {
+                alert("እባክዎ ሙሉ ስም እና ስልክ ቁጥር ያስገቡ።");
+                return;
+            }
+            const message = `*አዲስ የአባልነት ምዝገባ (New Membership)*%0A--------------------------%0A*ስም:* ${name}%0A*ስልክ:* ${phone}%0A*አድራሻ:* ${address}`;
+            const whatsappUrl = `https://wa.me/27722819997?text=${message}`;
+            window.open(whatsappUrl, '_blank');
+        };
+    
+function openBankWindow() {
+    // 1. Set the dimensions of the popup
+    const w = 500;
+    const h = 600;
+
+    // 2. Calculate the middle of the screen
+    const left = (screen.width / 2) - (w / 2);
+    const top = (screen.height / 2) - (h / 2);
+
+    // 3. Open the window with 'resizable=no'
+    // Note: Some modern browsers (Chrome/Firefox) might ignore 'resizable=no' 
+    // for security/accessibility, but 'modal' style stays clean.
+    window.open(
+        'bank_details.html', 
+        'BankDetails', 
+        `width=${w},height=${h},top=${top},left=${left},resizable=no,scrollbars=no,status=no,location=no`
+    );
+}
+
+    </script>
+</body>
+
+</html>
